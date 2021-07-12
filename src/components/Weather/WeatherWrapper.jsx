@@ -1,9 +1,10 @@
 import weatherInfo from "./date";
 import Weather from "./Weather";
+import "./WeatherWrapper.css";
 
 export default function WeatherWrapper() {
   return (
-    <div>
+    <div className="weather-wrapper">
       {weatherInfo.map((el) => {
         return (
           <Weather
